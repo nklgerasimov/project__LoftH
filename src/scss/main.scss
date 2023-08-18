@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+@import "./base/*.scss";
+@import "./blocks/*.scss"
+=======
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+@import "./blocks/*.scss"
+>>>>>>> ce95bfd3aa30f3e5d4a0fe5168153db3163a3e90
