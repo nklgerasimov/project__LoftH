@@ -19,7 +19,8 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1140px;
+    width: 1140px;
+    border: 1px solid red;
 
     &--sm {
         max-width: 840px;
