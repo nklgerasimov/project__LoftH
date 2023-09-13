@@ -1,0 +1,28 @@
+.section-map {
+    position: relative;
+    padding: 180px 0;
+
+    &::before {
+        content: "V";
+
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        
+        @include decorNumber;
+        line-height: 1;
+        top: 180px;
+    }
+}
+
+.section-map__title {
+    margin-bottom: 88px;
+}
+
+.section-map__map {
+
+}
+
+.map {
+    height: 358px;
+    background: #626262;
+}

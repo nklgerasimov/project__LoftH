@@ -19,55 +19,56 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1140px;
-    border: 1px solid red;
+    max-width: 1140px;
+    // border: 1px solid red;
 
     &--sm {
         max-width: 840px;
+        // border: 1px solid blue;
     }
 }
 
-// .text-right {
-//     text-align: right;
-// }
+.text-right {
+    text-align: right;
+}
 
-// .visually-hidden {
-//     /* Contain text within 1px box */
-// 	height: 1px;
-// 	overflow: hidden;
-// 	width: 1px;
+.visually-hidden {
+    /* Contain text within 1px box */
+	height: 1px;
+	overflow: hidden;
+	width: 1px;
 
-// 	/* Keep the layout */
-// 	position: absolute;
+	/* Keep the layout */
+	position: absolute;
 
-// 	/* Remove any visible trace (e.g. background color) */
-// 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-// 	clip: rect(1px, 1px, 1px, 1px);
-// 	clip-path: inset(50%); /* browsers in the future */
+	/* Remove any visible trace (e.g. background color) */
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%); /* browsers in the future */
 
-// 	/* Prevent the screen reader to skip spaces between words */
-// 	white-space: nowrap;
-// }
+	/* Prevent the screen reader to skip spaces between words */
+	white-space: nowrap;
+}
 
-// .none {
-//     display: none !important;
-// }
+.none {
+    display: none !important;
+}
 
-// .title-2 {
-//     font-size: 36px;
-//     font-family: $font-accent;
-//     color: $accent;
-//     font-weight: 700;
+.title-2 {
+    font-size: 36px;
+    font-family: var(--font-accent);
+    color: var(--accent);
+    font-weight: 700;
 
-//     @include mediaTablet {
-//         font-size: 28px;
-//     }
-// }
+    // @include mediaTablet {
+    //     font-size: 28px;
+    // }
+}
 
-// .link-bold {
-//     color: $accent;
-//     font-weight: 700;
-// }
+.link-bold {
+    color: var(--accent);
+    font-weight: 700;
+}
 
 // .no-scroll {
 //     overflow-y: hidden;
