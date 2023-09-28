@@ -72,9 +72,16 @@ gulp.task('files:dev', function() {
         .pipe(gulp.dest('./build/files/'))
 })
 
+gulp.task('libs:dev', function() {
+    return gulp
+        .src('./src/libs/**/*')
+        .pipe(changed('./build/libs/'))
+        .pipe(gulp.dest('./build/libs/'))
+})
+
 gulp.task('js:dev', function() {
     return gulp
-        .src('./src/js/*.js')
+        .src('./src/js/**/*.js')
         .pipe(changed('./build/js/'))
         .pipe(plumber(plumberNotify('JS')))
         // .pipe(babel())
@@ -103,4 +110,6 @@ gulp.task('watch:dev', function() {
     gulp.watch('./src/fonts/**/*', gulp.parallel('fonts:dev'));
     gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
     gulp.watch('./src/js/**/*', gulp.parallel('js:dev'));
+    gulp.watch('./src/libs/**/*', gulp.parallel('libs:dev'));
+
 })

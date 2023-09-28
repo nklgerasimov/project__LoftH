@@ -9,7 +9,7 @@
 }
 
 @mixin mediaTablet {
-    @media screen and (max-width: $tablet) {
-        @content;
+        @media screen and (max-width: $tablet) {
+            @content;
+        }
     }
-}

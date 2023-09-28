@@ -27,11 +27,11 @@
     text-align: center;
     line-height: 1.23;
 
-    // &--bottom {
-    //     @include mediaTablet {
-    //         grid-row: 4 / 5;
-    //     }
-    // }
+    &--bottom {
+        @include mediaTablet {
+            grid-row: 4 / 5;
+        }
+    }
 }
 
 .form__btn {

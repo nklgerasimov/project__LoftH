@@ -63,6 +63,11 @@ a {
     // @include mediaTablet {
     //     font-size: 28px;
     // }
+    @media screen and (max-width: 999px) {
+    
+          font-size: 28px;
+        
+    }
 }
 
 .link-bold {
@@ -70,6 +75,6 @@ a {
     font-weight: 700;
 }
 
-// .no-scroll {
-//     overflow-y: hidden;
-// }
+.no-scroll {
+    overflow-y: hidden;
+}
